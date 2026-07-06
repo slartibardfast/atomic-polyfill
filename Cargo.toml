@@ -1,18 +1,13 @@
 [package]
 authors = ["Dario Nieuwenhuis <dirbaio@dirbaio.net>"]
-description = "Atomic polyfills, for targets where they're not available."
+description = "Compatibility shim re-exporting portable-atomic under the atomic-polyfill name (upstream deprecated, RUSTSEC-2023-0089)."
 edition = "2021"
 license = "MIT OR Apache-2.0"
 name = "atomic-polyfill"
 readme = "README.md"
-repository = "https://github.com/embassy-rs/atomic-polyfill"
+repository = "https://github.com/slartibardfast/atomic-polyfill"
 version = "1.0.3"
-
-categories = [
-  "embedded",
-  "no-std",
-  "concurrency",
-]
+categories = ["embedded", "no-std", "concurrency"]
 
 [dependencies]
-critical-section = "1.0.0"
+portable-atomic = "1"
